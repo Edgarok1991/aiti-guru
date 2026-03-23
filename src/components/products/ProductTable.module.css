@@ -1,0 +1,225 @@
+.tableWrap {
+  overflow: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: #fff;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  min-width: 880px;
+}
+
+.thCheck {
+  width: 44px;
+  padding: 14px 8px;
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+  background: #fff;
+}
+
+.thSortable {
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+  background: #fff;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.sortBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  padding: 14px 16px 14px 12px;
+  border: none;
+  background: none;
+  font: inherit;
+  font-weight: 500;
+  color: var(--color-header-text);
+  cursor: pointer;
+  text-align: left;
+}
+
+.sortBtn:hover {
+  color: var(--color-primary);
+}
+
+.sortActive {
+  color: var(--color-primary);
+  font-size: 12px;
+}
+
+.sortMuted {
+  color: #d1d5db;
+  font-size: 12px;
+}
+
+.thActions {
+  width: 96px;
+  border-bottom: 1px solid var(--color-border);
+  background: #fff;
+}
+
+.rowEven {
+  background: #fff;
+}
+
+.rowOdd {
+  background: #fafafa;
+}
+
+.rowSelected {
+  background: #eef2ff !important;
+  box-shadow: inset 3px 0 0 var(--color-primary);
+}
+
+.tdCheck {
+  padding: 12px 8px;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid #eee;
+}
+
+.tdCheck input,
+.thCheck input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-primary);
+}
+
+.table td:not(.tdCheck):not(.tdActions) {
+  padding: 12px 12px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+}
+
+.nameCell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.thumb {
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  background: #e5e7eb;
+  flex-shrink: 0;
+}
+
+.nameTitle {
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.35;
+  max-width: 280px;
+}
+
+.nameSub {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  text-transform: capitalize;
+}
+
+.tdStrong {
+  font-weight: 700;
+  color: #111827;
+}
+
+.tdMono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 13px;
+  color: #374151;
+}
+
+.tdRating {
+  color: #111827;
+}
+
+.tdRatingLow {
+  color: var(--color-danger);
+  font-weight: 600;
+}
+
+.tdPrice {
+  font-variant-numeric: tabular-nums;
+}
+
+.priceCell {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0;
+  color: #111827;
+}
+
+.priceInt {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.priceComma {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.priceFrac {
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 1px;
+}
+
+.tdActions {
+  padding: 10px 12px 10px 8px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+}
+
+.actionGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+}
+
+.actPrimary {
+  padding: 0;
+  border: none;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.actPrimary:hover {
+  opacity: 0.9;
+}
+
+.actPrimaryImg {
+  display: block;
+  height: 26px;
+  width: auto;
+}
+
+.actGhost {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: not-allowed;
+  opacity: 0.95;
+}
+
+.actGhostImg {
+  display: block;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
